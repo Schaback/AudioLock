@@ -46,6 +46,7 @@ namespace AudioUnfuck
                 if (callbacks.TryGetValue(device, out AudioEndpointVolumeCallback callback))
                 {
                     endpoint.UnregisterControlChangeNotify(callback);
+                    endpoints.Remove(device);
                     callbacks.Remove(device);
                 }
             }
