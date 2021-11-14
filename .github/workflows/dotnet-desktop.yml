@@ -75,9 +75,7 @@ jobs:
     - name: Package
       run: dotnet publish AudioLock.sln --configuration Release --output publish --runtime win-x64 --self-contained true -p:PublishSingleFile=true
 
-    # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
+    - name: GH Release
+      uses: softprops/action-gh-release@v0.1.13
       with:
-        name: AudioLock.exe
-        path: publish\AudioLock.exe
+        files: publish\AudioLock.exe
