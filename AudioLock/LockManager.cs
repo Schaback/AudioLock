@@ -1,25 +1,28 @@
 ﻿using CSCore.CoreAudioAPI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
+using Microsoft.Win32;
 
 namespace AudioUnfuck
 {
     internal class LockManager
     {
-        private Dictionary<MMDevice, AudioEndpointVolume> endpoints;
-        private Dictionary<MMDevice, AudioEndpointVolumeCallback> callbacks;
+        private Dictionary<String, DeviceInfo> deviceInfos;
 
-        public LockManager()
+        public LockManager(MMDevice[] devices)
         {
-            endpoints = new Dictionary<MMDevice, AudioEndpointVolume>();
-            callbacks = new Dictionary<MMDevice, AudioEndpointVolumeCallback>();
+            deviceInfos = new Dictionary<String, DeviceInfo>();
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\AudioLock");
+            String lockedStr = (string)(key.GetValue("LockedDevices") ?? "");
+            key.Close();
+            foreach (var device in devices)
+            {
+                if (lockedStr.Contains(device.DeviceID))
+                {
+                    Lock(device);
+                }
+            }
         }
 
-        internal void Subscribe(MMDevice device)
+        internal void Lock(MMDevice device)
         {
             System.Diagnostics.Debug.WriteLine("Registering callback for " + device);
             var endpoint = AudioEndpointVolume.FromDevice(device);
@@ -34,22 +37,43 @@ namespace AudioUnfuck
                 }
             };
             endpoint.RegisterControlChangeNotify(callback);
-            endpoints.Add(device, endpoint);
-            callbacks.Add(device, callback);
+            deviceInfos.Add(device.DeviceID, new DeviceInfo(endpoint, callback));
         }
 
-        internal void Unsubscribe(MMDevice device)
+        internal void Unlock(MMDevice device)
         {
             System.Diagnostics.Debug.WriteLine("Unregistering callback for " + device);
-            if (endpoints.TryGetValue(device, out AudioEndpointVolume endpoint))
+            if (deviceInfos.TryGetValue(device.DeviceID, out DeviceInfo deviceInfo))
             {
-                if (callbacks.TryGetValue(device, out AudioEndpointVolumeCallback callback))
-                {
-                    endpoint.UnregisterControlChangeNotify(callback);
-                    endpoints.Remove(device);
-                    callbacks.Remove(device);
-                }
+                deviceInfo.endpoint.UnregisterControlChangeNotify(deviceInfo.callback);
+                deviceInfos.Remove(device.DeviceID);
             }
+        }
+
+        internal bool IsLocked(MMDevice device)
+        {
+            return deviceInfos.ContainsKey(device.DeviceID);
+        }
+
+        internal void Save()
+        {
+            var lockedDevices = String.Join("|", deviceInfos.Keys);
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\AudioLock");
+            key.SetValue("LockedDevices", lockedDevices);
+            key.Close();
+        }
+    }
+
+    internal class DeviceInfo
+    {
+        public AudioEndpointVolume endpoint;
+        public AudioEndpointVolumeCallback callback;
+
+        public DeviceInfo(AudioEndpointVolume endpoint, AudioEndpointVolumeCallback callback)
+        {
+            this.endpoint = endpoint;
+            this.callback = callback;
         }
     }
 }
+

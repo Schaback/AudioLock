@@ -26,7 +26,7 @@ namespace AudioUnfuck
             imageList = new ImageList();
             captureDevices = endpoints.ToArray();
             locked = new bool[endpoints.Count];
-            lockManager = new LockManager();
+            lockManager = new LockManager(captureDevices);
         }
 
         private Icon GetIconFromPath(String path)
@@ -86,22 +86,30 @@ namespace AudioUnfuck
 
                 item.SubItems.Add(device.FriendlyName);
                 item.SubItems.Add(endpointVolume.MasterVolumeLevelScalar.ToString("0.00"));
+
+                if (lockManager.IsLocked(device))
+                {
+                    item.Checked = true;
+                }
+
                 listView1.Items.Add(item);
+
                 chIcon.Width = -1;
                 chName.Width = -1;
             }
             listView1.EndUpdate();
+            listView1.ItemCheck += listView1_ItemCheck;
         }
 
-        private void listView1_ItemCheck(object sender, ItemCheckEventArgs e)
+        private void listView1_ItemCheck(object? sender, ItemCheckEventArgs e)
         {
             if (e.CurrentValue == CheckState.Unchecked)
             {
-                lockManager.Subscribe(captureDevices[e.Index]);
+                lockManager.Lock(captureDevices[e.Index]);
             }
             else if ((e.CurrentValue == CheckState.Checked))
             {
-                lockManager.Unsubscribe(captureDevices[e.Index]);
+                lockManager.Unlock(captureDevices[e.Index]);
             }
         }
 
@@ -121,10 +129,13 @@ namespace AudioUnfuck
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-
             this.Show();
             this.WindowState = FormWindowState.Normal;
+        }
 
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            lockManager.Save();
         }
     }
 }
