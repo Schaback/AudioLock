@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using CSCore.CoreAudioAPI;
 using CSCore.Win32;
+using Microsoft.Win32;
 
 namespace AudioUnfuck
 {
@@ -45,6 +46,13 @@ namespace AudioUnfuck
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (Environment.GetCommandLineArgs().Contains("--minimized"))
+            {
+                notifyIcon1.Visible = true;
+                this.WindowState = FormWindowState.Minimized;
+                this.Hide();
+            }
+
             ColumnHeader chIcon, chName, chLevel;
             chIcon = new ColumnHeader();
             chName = new ColumnHeader();
@@ -99,6 +107,12 @@ namespace AudioUnfuck
             }
             listView1.EndUpdate();
             listView1.ItemCheck += listView1_ItemCheck;
+
+            RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true)!;
+            if (registryKey.GetValueNames().Contains("AudioLock"))
+            {
+                autoStartMenuItem.Checked = true;
+            }
         }
 
         private void listView1_ItemCheck(object? sender, ItemCheckEventArgs e)
@@ -136,6 +150,26 @@ namespace AudioUnfuck
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             lockManager.Save();
+        }
+
+        private void autoStartMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            System.Diagnostics.Debug.WriteLine("Autostart: " + item.Checked);
+            RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true)!;
+            if (item.Checked)
+            {
+                registryKey.SetValue("AudioLock", Application.ExecutablePath + " --minimized");
+            }
+            else
+            {
+                registryKey.DeleteValue("AudioLock");
+            }
+        }
+
+        private void exitMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

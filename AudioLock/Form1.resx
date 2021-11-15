@@ -116,89 +116,65 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>130, 17</value>
+  </metadata>
+  <data name="autoStartMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="autoStartMenuItem.Text" xml:space="preserve">
+    <value>AutoStart</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 6</value>
+  </data>
+  <data name="exitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="exitMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 54</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSAAAA9AAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD0AAAAUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ0AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACdAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgAA
-        AJ8AAACpAAAAqQAAAKkAAADGAAAA/wAAAP8AAADGAAAAqQAAAKkAAACpAAAAnwAAACIAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAAAFUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVQAAAP8AAAD/AAAAVQAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQAAAFsAAACuAAAA/wAAAP8AAACuAAAAWwAA
-        ABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJgAAAKgAAAD6AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA+gAAAKgAAAAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAD4AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPgAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPAAAA/wAAAP8AAAD/AAAAzwAA
-        AGgAAAAmAAAABgAAAAYAAAAmAAAAaAAAAM8AAAD/AAAA/wAAAP8AAACPAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAP8AAAD/AAAA9gAA
-        AGYAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAGYAAAD2AAAA/wAAAP8AAABwAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACcAAAD4AAAA/wAA
-        APYAAAA/AAAAAAAAAAAAAAAAAAAAHAAAAEwAAABMAAAAHAAAAAAAAAAAAAAAAAAAAD4AAAD2AAAA/wAA
-        APgAAAAnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqAAA
-        AP8AAAD/AAAAZgAAAAAAAAAAAAAAHAAAALEAAAD9AAAA/wAAAP8AAAD9AAAAsQAAABwAAAAAAAAAAAAA
-        AGYAAAD/AAAA/wAAAKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        ABUAAAD6AAAA/wAAAM8AAAABAAAAAAAAABwAAADjAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA4wAA
-        ABwAAAAAAAAAAQAAAM8AAAD/AAAA+wAAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAWwAAAP8AAAD/AAAAaQAAAAAAAAAAAAAAsQAAAP8AAAD/AAAAzQAAAGcAAABnAAAAzQAA
-        AP8AAAD/AAAAsQAAAAAAAAAAAAAAaAAAAP8AAAD/AAAAWwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAACMAAAA/wAAAP8AAAAnAAAAAAAAABwAAAD9AAAA/wAAAM0AAAAHAAAAAAAA
-        AAAAAAAHAAAAzQAAAP8AAAD9AAAAHAAAAAAAAAAmAAAA/wAAAP8AAACMAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKMAAAD/AAAA/wAAAAYAAAAAAAAASwAAAP8AAAD/AAAAZwAA
-        AAAAAAAAAAAAAAAAAAAAAABnAAAA/wAAAP8AAABMAAAAAAAAAAYAAAD/AAAA/wAAAKQAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqQAAAP8AAAD/AAAAAAAAAAAAAABVAAAA/wAA
-        AP8AAABVAAAAAAAAAAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAAAFUAAAAAAAAAAAAAAP8AAAD/AAAAqgAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpAAAA/wAAAP8AAAAAAAAAAAAA
-        AFUAAAD/AAAA/wAAAFUAAAAAAAAAAAAAAAAAAAAAAAAAVQAAAP8AAAD/AAAAVQAAAAAAAAAAAAAA/wAA
-        AP8AAACqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgAAAD/AAAA/QAA
-        AAAAAAAAAAAAVQAAAP8AAAD/AAAAVQAAAAAAAAAAAAAAAAAAAAAAAABVAAAA/wAAAP8AAABVAAAAAAAA
-        AAAAAAD9AAAA/wAAAKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUgAA
-        APIAAACeAAAAAAAAAAAAAABVAAAA/wAAAP8AAABVAAAAAAAAAAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAA
-        AFUAAAAAAAAAAAAAAJ4AAADyAAAAUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAAAFUAAAAAAAAAAAAAAAAAAAAAAAAAVQAA
-        AP8AAAD/AAAAVQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVQAAAP8AAAD/AAAAVQAAAAAAAAAAAAAAAAAA
-        AAAAAABVAAAA/wAAAP8AAABVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVAAAA/wAAAP8AAABVAAAAAAAA
-        AAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAAAFUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAA
-        AFUAAAAAAAAAAAAAAAAAAAAAAAAAVQAAAP8AAAD/AAAAVQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVQAA
-        AP8AAAD/AAAAVQAAAAAAAAAAAAAAAAAAAAAAAABVAAAA/wAAAP8AAABVAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAABVAAAA/wAAAP8AAABVAAAAAAAAAAAAAAAAAAAAAAAAAFUAAAD/AAAA/wAAAFUAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAFQAAAD/AAAA/wAAAFYAAAAAAAAAAAAAAAAAAAAAAAAAVgAAAP8AAAD/AAAAVAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAP8AAAD/AAAAfgAAAAAAAAAAAAAAAAAAAAAAAAB9AAAA/wAA
-        AP8AAABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAAAA8gAAAP8AAADuAAAALwAAAAAAAAAAAAAALwAA
-        AO0AAAD/AAAA8gAAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/AAAA/wAAAP8AAAD6AAAAvAAA
-        ALwAAAD6AAAA/wAAAP8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAACoAAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAAqQAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAABcAAAAxAAAAPUAAAD1AAAAxAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA/4AB//+AAf//gAH///w////8P///8A///8AD//+AAf//AAD//gfgf/wc
-        OD/8MAw/+CAEH/hgBh/4QYIf+EPCH/jDwx/4w8Mf+MPDH/jDwx//w8P//8PD///Dw///w8P//8PD///D
-        w///w8P//8PD///Bg///4Af//+AH///4H/8=
+        AAABAAEAICAAAAEAIAC3BAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgDAAAARKSKxgAAAAFz
+        UkdCAdnJLH8AAAAJcEhZcwAAAOwAAADsAXkocb0AAAHFUExURQAAAP//////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////8BtSkIAAACXdFJOUwBFvPTzu0QgS2/+/25MDNIv/fwt0Y24AxmSkAK0ihz38haTPrmR
+        F/YbcodI5xS/RolxvTO+TV1WQE414fsI5gHv6foH4PgfwFeZwR7sE9A7zM0S6t8dqMKh3WCAra5+YkIN
+        20HazsVmJIsQpiVowzb5OGVJ5YJkLAqxr3BUl3NS6Hsp2X2lUQZbWiJTD+v1so4VKmnchX8YYEd5AAAB
+        6ElEQVR4nKWS+VcSURzFb8O4XiWGLKEJtTS1BMNoEwcGF0ozM6WsaadsQa0sbbXSqLRdK+vv7b0YzhlB
+        63S6v3yX+3lnvu/7BvgnbVJcaklpYbdMKbezikoKVVbZZbVSJoN7M+2OR+NvebfYPGvcImzltlr4ZMNP
+        W9tl5YO+gwGgrr5hJ3axUbSa8kCTKBq5G81qSyv2cC/aGAyJXnseaBdFKMh9CLMD+xnBAR5E2yEncPgI
+        OqkgyhJ0GXrMiJt1roQT6Ha1msGe3lqjD8k4jvIY+jngBAbYj+McRLAeJ1QM8SSGecoJjHAYNRyFKyVC
+        M05rZzB21gko5zCoWfCJo36exwVeNMXgkVJbEVGYl3gZV8Rdr3LETF/j9cIHqOZ4Wr8h+zd5C7czE6I3
+        admalHsIT+EO74rs3nTyfu7QmkUJRZPTURkfMAPMzEadgGe2E3jIRzny8ROIjVfhaR54hjnOAb0ex0zP
+        +QIv80CHWNR8wdBD3ngs3ZXz+9yxBWO08FpjfIXsuPRfZ/GGb4t+xynVu4ild37/+yXMexs+FAH4aGjh
+        TzKZyGg9i8U+UP6ZX5ZXVpZbmJpZzwe+BlJyhu5AaH1fSP+mqll9Q1sqkfij/b/A91XL0jTLWq3YAPhh
+        P4X28y+fWaNfQBtVaGJMIkQAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>notifyIcon1</value>
+    <value>AudioLock</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -209,17 +185,60 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>461, 263</value>
   </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIAC3BAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgDAAAARKSKxgAAAAFz
+        UkdCAdnJLH8AAAAJcEhZcwAAAOwAAADsAXkocb0AAAHFUExURQAAAP//////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////8BtSkIAAACXdFJOUwBFvPTzu0QgS2/+/25MDNIv/fwt0Y24AxmSkAK0ihz38haTPrmR
+        F/YbcodI5xS/RolxvTO+TV1WQE414fsI5gHv6foH4PgfwFeZwR7sE9A7zM0S6t8dqMKh3WCAra5+YkIN
+        20HazsVmJIsQpiVowzb5OGVJ5YJkLAqxr3BUl3NS6Hsp2X2lUQZbWiJTD+v1so4VKmnchX8YYEd5AAAB
+        6ElEQVR4nKWS+VcSURzFb8O4XiWGLKEJtTS1BMNoEwcGF0ozM6WsaadsQa0sbbXSqLRdK+vv7b0YzhlB
+        63S6v3yX+3lnvu/7BvgnbVJcaklpYbdMKbezikoKVVbZZbVSJoN7M+2OR+NvebfYPGvcImzltlr4ZMNP
+        W9tl5YO+gwGgrr5hJ3axUbSa8kCTKBq5G81qSyv2cC/aGAyJXnseaBdFKMh9CLMD+xnBAR5E2yEncPgI
+        OqkgyhJ0GXrMiJt1roQT6Ha1msGe3lqjD8k4jvIY+jngBAbYj+McRLAeJ1QM8SSGecoJjHAYNRyFKyVC
+        M05rZzB21gko5zCoWfCJo36exwVeNMXgkVJbEVGYl3gZV8Rdr3LETF/j9cIHqOZ4Wr8h+zd5C7czE6I3
+        admalHsIT+EO74rs3nTyfu7QmkUJRZPTURkfMAPMzEadgGe2E3jIRzny8ROIjVfhaR54hjnOAb0ex0zP
+        +QIv80CHWNR8wdBD3ngs3ZXz+9yxBWO08FpjfIXsuPRfZ/GGb4t+xynVu4ild37/+yXMexs+FAH4aGjh
+        TzKZyGg9i8U+UP6ZX5ZXVpZbmJpZzwe+BlJyhu5AaH1fSP+mqll9Q1sqkfij/b/A91XL0jTLWq3YAPhh
+        P4X28y+fWaNfQBtVaGJMIkQAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>AudioUnfuck v1.0</value>
+    <value>AudioLock v1.1</value>
   </data>
   <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
     <value>notifyIcon1</value>
   </data>
   <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;autoStartMenuItem.Name" xml:space="preserve">
+    <value>autoStartMenuItem</value>
+  </data>
+  <data name="&gt;&gt;autoStartMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitMenuItem.Name" xml:space="preserve">
+    <value>exitMenuItem</value>
+  </data>
+  <data name="&gt;&gt;exitMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
