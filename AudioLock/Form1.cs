@@ -61,7 +61,7 @@ namespace AudioUnfuck
             chName.Text = "Name";
             chLevel.Text = "Level";
             chLevel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            chLevel.Width = 40;
+            chLevel.Width = 50;
 
             listView1.Columns.AddRange(new ColumnHeader[] { chIcon, chName, chLevel });
 
@@ -93,7 +93,7 @@ namespace AudioUnfuck
                 item.ImageKey = iconPath;
 
                 item.SubItems.Add(device.FriendlyName);
-                item.SubItems.Add(endpointVolume.MasterVolumeLevelScalar.ToString("0.00"));
+                item.SubItems.Add(endpointVolume.MasterVolumeLevelScalar.ToString("P0"));
 
                 if (lockManager.IsLocked(device))
                 {
